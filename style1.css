@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.navbar {
+    position: fixed;  
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 60px;
+    background: #151515; 
+    /* backdrop-filter: blur(5px);       */
+}
+
+.navbar-container {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    height: 100%;
+    font-family: "Sen", sans-serif;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo-container .logo {
+    width: 100%;
+    padding-right: 30px;
+    
+}
+
+.menu-container {
+    flex: 5;
+}
+
+.menu-list {
+    display: flex;
+    gap: 20px;
+}
+
+/* Thiết kế thanh chuyển dưới chân chữ */
+.menu-list-item a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    padding: 5px 10px; 
+    font-weight: bold;
+}
+
+.menu-list-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* cách chữ 1 chút */
+    width: 100%;
+    height: 4px;   /* độ dày của thanh dẹt */
+    background: rgb(255, 216, 45);
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.menu-list-item a:hover::after,
+.menu-list-item a.active::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.profile-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+  margin-right: 15px;
+}
+
+.search-box {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid #E50914;
+  background-color: #fdfbfb;
+  height: 28px;
+}
+
+.search-box::placeholder {
+  color: #6d6767;
+  font-weight: bold;
+  margin: 0
+}
+
+.sign-in-block {
+    width: 80px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: #E50914;
+    border-radius: 5px;  
+    font-weight: bold;
+    border: none;
+}
+
+.sign-in-block a {
+    text-decoration: none;
+    color: rgb(246, 247, 240);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  /* padding-top: 60px; */
+  /* overflow: hidden; */
+  background-size: cover;
+  background-position: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  
+}
+
+/* .container {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.featured-content {
+  height: 50vh;
+  padding: 50px;  
+}
+
+.featured-title {
+  width: 200px;
+}
+
+.featured-desc{
+  width: 500px;
+  color: lightgray;
+  margin: 30px 0;
+}
+
+.featured-button {
+  background-color: #4dbf00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+.movie-list-container {
+  padding: 30px 0;
+}
+
+.movie-list-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  transform: translate(0);
+  transition: all 1s ease-in-out; 
+}
+
+.movie-list-item {
+  margin-right: 30px;
+  position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+  transform: scale(1.2);
+  margin: 0 30px;
+  opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-img {
+  transition: all 1s ease-in-out;
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+} */
+
+.container {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+}
+
+.content-container {
+  /* background-color: #e2343a; */
+  margin-left: 50px;
+  padding: 20px;
+}
+
+.movie-list-container {
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  /* background-color: aqua; */
+}
+
+.movie-list {
+  display: flex;
+  margin: 30px 0;
+  /* background-color: rgb(117, 39, 168); */
+  /* width: 100vw; */
+  height: 250px;
+}
+
+.movie-list-item {
+  /* background-color: darkcyan; */
+  position: relative;
+  width: 200px;
+  height: 270px;
+  margin-right: 30px;
+  border-radius: 20px;
+  /* overflow: hidden; */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* border: 1px solid #333; */
+  /* overflow: hidden; */
+}
+
+.movie-list-item:hover {
+  transform: scale(1.1) translateY(-10px); 
+  z-index: 10;                              /* nổi lên trên */
+  /*box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); thêm đổ bóng */
+}
+
+.movie-list-item img {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  /* transition: transform 0.3s ease; */
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 280px;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+.icon-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* border: none; */
+  /* outline: none; */
+  font-size: 28px;
+  color: white;
+  background: rgba(255, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: scale(0.8);
+  transition: transform 0.5s ease-in-out; 
+}
+
+.movie-list-item:hover .overlay{
+  opacity: 1;
+}
+
+.movie-list-item:hover .play-btn {
+  transform: scale(1.1);
+}
+
+.footer {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  color:white;
+  padding: 40px;
+  display: flex;
+}
+
+.footer-logo {
+  flex: 1;
+  text-align: center;
+}
+
+.fa-brands {
+  margin: 20px 10px;
+  font-size: 40px;
+}
+
+.footer-logo img {
+  width: 40%;
+  height: 50px;
+  object-fit: cover;
+}
+
+.footer-columns {
+  flex: 1.5;
+  display: flex;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-title {
+  color: #e6d2d5;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-item a {
+  color: white;
+  /* text-decoration: none; */
+  line-height: 2.5;
+  font-style: italic;
+}
+
+
+
+
+
+
+
