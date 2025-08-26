@@ -86,7 +86,12 @@ body {
 }
 
 .search-icon {
+  position: relative;
   margin-right: 15px;
+  left: 55%;
+  color: #333;
+  padding: 5px;
+  border-left: 2px solid rgb(133, 127, 127);
 }
 
 .search-box {
@@ -95,15 +100,25 @@ body {
   border: 1px solid #E50914;
   background-color: #fdfbfb;
   height: 28px;
+  width: 270px;
+}
+
+/* Ẩn nút x (clear) mặc định của search input trên Chrome, Edge */
+.search-box::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .search-box::placeholder {
   color: #6d6767;
   font-weight: bold;
-  margin: 0
 }
 
-.sign-in-block {
+.sign-in-container {
+  display: flex;
+}
+
+.btn {
     width: 80px;
     height: 30px;
     margin-left: 20px;
@@ -111,15 +126,21 @@ body {
     border-radius: 5px;  
     font-weight: bold;
     border: none;
-}
-
-.sign-in-block a {
-    text-decoration: none;
-    color: rgb(246, 247, 240);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    
 }
 
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn.register {
+  background-color: transparent;
+  border: 1px solid #fdfbfb;
+}
+  
 .banner {
   width: 100%;
   height: 100vh;
@@ -255,7 +276,7 @@ body {
 }
 
 .movie-list-item:hover {
-  transform: scale(1.1) translateY(-10px); 
+  transform: scale(1.1); 
   z-index: 10;                              /* nổi lên trên */
   /*box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); thêm đổ bóng */
 }
@@ -282,6 +303,13 @@ body {
   justify-content: center;
   transition: opacity 0.5s ease-in-out;
   border-radius: 20px;
+}
+
+.overlay p {
+  position: absolute;
+  bottom: 20px;
+  font-size: 16px;
+  
 }
 
 .icon-btn {
