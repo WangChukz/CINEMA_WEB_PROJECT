@@ -105,4 +105,5 @@ body {
 .optional-link a {
     color: white;
     font-style: italic;
+    text-decoration: underline;
 }
