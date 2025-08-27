@@ -97,6 +97,10 @@ body {
     font-weight: 600;
 }
 
+.btn:focus {
+    background: rgb(211, 38, 38);
+}
+
 .optional-link {
     margin-top: 15px;
     font-size: 14px;
@@ -106,4 +110,67 @@ body {
     color: white;
     font-style: italic;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 0 20px;
+        border-radius: 20px;
+    }
+
+    .form-box {
+        padding: 25px 20px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .btn {
+        font-size: 14px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        box-shadow: none;
+        background: rgba(127, 129, 126, 0.7);
+    }
+
+    .form-box {
+        padding: 20px 15px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .input-box input {
+        padding: 12px 45px 12px 15px;
+        font-size: 14px;
+    }
+
+    .input-box i {
+        font-size: 18px;
+        right: 8px;
+    }
+
+    .btn {
+        font-size: 14px;
+        height: 36px;
+    }
+
+    .forgot-link,
+    .optional-link {
+        font-size: 13px;
+    }
 }
