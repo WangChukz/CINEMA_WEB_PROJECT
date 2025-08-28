@@ -388,21 +388,32 @@ body {
   font-style: italic;
 }
 
+.nav-bars-btn {
+  display: none;
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
 /* Mobile (max-width: 768px) */
-@media (max-width: 768px) {
+@media (max-width: 430px) {
+  .navbar {
+    height: 50px;
+  }
+  
   .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 10px 20px;
+    display: flex;
+    flex-direction: row; /* Sửa lại từ column thành row */
+    align-items: center;
   }
 
-  .logo-container {
-    width: 100%;
-    text-align: left;
+  .logo-container .logo {
+    width: 40%;
+    margin: 10px;
   }
 
   .menu-container {
+    display: none;
     width: 100%;
     margin-top: 10px;
   }
@@ -413,6 +424,7 @@ body {
   }
 
   .profile-container {
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -435,12 +447,18 @@ body {
     margin: 10px 10px 0 0;
   }
 
+  .banner {
+    width: 100%;
+    height: 250px;
+  }
   .banner img {
-    height: auto;
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
   }
 
   .movie-list {
-    overflow-x: scroll;
+    overflow-x:scroll;
     flex-wrap: nowrap;
   }
 
@@ -487,22 +505,10 @@ body {
   }
 }
 
-/* Small Tablet (max-width: 992px) */
-@media (max-width: 992px) {
-  .menu-list {
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  .movie-list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .movie-list-item {
-    margin-bottom: 20px;
-  }
+.nav-bars-btn {
+  display: block;
 }
+
 
 
 
