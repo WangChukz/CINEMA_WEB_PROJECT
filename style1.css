@@ -330,6 +330,7 @@ body {
     /* flex-direction: row; */
     /* align-items: center; */
     padding-left: 0;
+    padding-right: auto;
   }
 
   .logo-container {
@@ -434,8 +435,6 @@ body {
   }
   .nav-bars-btn {
     display: block;
-    margin-right: 0px;
-
   }
 }
 
