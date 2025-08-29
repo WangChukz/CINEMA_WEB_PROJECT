@@ -330,7 +330,7 @@ body {
     /* flex-direction: row; */
     /* align-items: center; */
     padding-left: 0;
-    padding-right: auto;
+    padding-right: 10px;
   }
 
   .logo-container {
