@@ -330,16 +330,12 @@ body {
     /* flex-direction: row; */
     /* align-items: center; */
     padding-left: 0;
-    padding-right: 10px;
-  }
-
-  .logo-container {
-    margin-left: 0;
+    padding-right: 15px;
   }
 
   .logo-container .logo {
-    flex: 0;
     width: 40%;
+    margin-top: 8px;
   }
 
   .menu-container {
