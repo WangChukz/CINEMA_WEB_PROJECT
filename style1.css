@@ -128,7 +128,6 @@ body {
     border: none;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    
 }
 
 .btn a {
@@ -179,6 +178,8 @@ body {
 .movie-list {
   display: flex;
   margin: 30px 0;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
   /* background-color: rgb(117, 39, 168); */
   /* width: 100vw; */
   height: 250px;
@@ -315,6 +316,105 @@ body {
   display: none;
   width: 28px;
   height: 28px;
+  color: white;
+}
+
+/* .nav-overlay {
+  display: none; 
+  width: 100%;
+  position:fixed;
+  top: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.nav_mobile {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.menu-mobile-list {
+  margin: 50px 20px 20px;
+  /* background-color: red; */
+}
+
+.menu-mobile-list input {
+  padding-left: 15px;
+}
+
+.menu-mobile-list-item {
+  margin: 10px;
+  padding: 5px 0;
+  background-color: rgba(190, 182, 182, 0.2);
+  border: 1px solid rgba(228, 236, 228, 0.233);
+  border-radius: 5px;
+  
+}
+
+.menu-mobile-list-item a {
+  text-decoration: none;
+  color: white;
+  /* background-color: rgba(180, 181, 192, 0.4); */
+  
+}
+
+.profile-mobile-container {
+  margin: 20px;
+  /* background-color: rgb(178, 66, 189); */
+}
+
+.mobile-search-icon {
+  position: relative;
+  left: 44%;
+  transform: translateY(27px);
+  color: #333;
+  padding: 5px;
+  border-left: 2px solid rgba(133, 127, 127, 0.692);
+}
+
+.mobile-search-box {
+  border-radius: 5px;
+  border: 1px solid #E50914;
+  background-color: #fdfbfb;
+  height: 28px;
+  width: 350px;
+}
+
+.mobile-search-box::placeholder {
+  color: #6d67679d;
+  font-weight: bold;
+}
+
+.mobile-search-box::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.btn-mobile {
+  width: 80px;
+  height: 35px;
+  margin-left: 10px;
+  background-color: #E50914;
+  border-radius: 5px;  
+  font-weight: bold;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.btn-mobile.register {
+  background-color: transparent;
+  border: 1px solid #fdfbfb;
+}
+
+.btn-mobile a {
+  text-decoration: none;
   color: white;
 }
 
