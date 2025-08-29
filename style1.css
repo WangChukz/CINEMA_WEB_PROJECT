@@ -330,7 +330,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 } */
 
-.nav_mobile {
+.nav-mobile {
   display: none;
   position: fixed;
   top: 0;
@@ -338,10 +338,11 @@ body {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
+  /* transform: translateY(-642px); */
 }
 
 .menu-mobile-list {
-  margin: 50px 20px 20px;
+  margin: 0px 20px 20px;
   /* background-color: red; */
 }
 
@@ -430,6 +431,18 @@ body {
 .btn-mobile a {
   text-decoration: none;
   color: white;
+}
+
+.nav-mobile-close {
+  width: 30px;
+  height: 30px;
+  /* background-color: white; */
+  margin: 20px auto 0px;
+  /* margin-top: 20px; */
+}
+
+.nav-input:checked ~ .nav-mobile {
+  display: block;
 }
 
 /* Mobile (max-width: 768px) */
@@ -564,7 +577,7 @@ body {
     display: block;
   }
 
-  .nav_mobile {
-    display: block;
+  .nav-mobile {
+    /* display: block; */
   }
 }
