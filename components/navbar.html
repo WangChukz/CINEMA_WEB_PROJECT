@@ -67,5 +67,19 @@
             <div class="nav-overlay"></div>
         </div>
     </div>
+
+    <script>
+  // Lấy checkbox
+       const navInput = document.getElementById("nav-mobile-input");
+
+  // Lấy tất cả link trong menu
+       const navLinks = document.querySelectorAll(".menu-mobile-list a, .sign-in-mobile-container a");
+
+       navLinks.forEach(link => {
+       link.addEventListener("click", () => {
+       navInput.checked = false; // Tắt menu sau khi click
+          });
+       });
+    </script>
 </body>
 </html>
