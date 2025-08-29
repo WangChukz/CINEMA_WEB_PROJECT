@@ -441,7 +441,7 @@ body {
   /* margin-top: 20px; */
 }
 
-.nav-input:checked ~ .nav-mobile {
+#nav-mobile-input:checked ~ .nav-mobile {
   display: block;
 }
 
