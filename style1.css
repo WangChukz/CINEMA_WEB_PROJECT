@@ -338,9 +338,12 @@ body {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
-  /* transform: translateY(-642px); */
+  margin-top: 45px;
 }
 
+.menu-mobile-container {
+  margin-top: -40px;
+}
 .menu-mobile-list {
   margin: 0px 20px 20px;
   /* background-color: red; */
@@ -364,6 +367,10 @@ body {
   color: white;
   /* background-color: rgba(180, 181, 192, 0.4); */
   
+}
+
+.menu-mobile-list-item:hover {
+  background-color: rgba(255, 0, 0, 0.8);
 }
 
 .profile-mobile-container {
