@@ -351,6 +351,12 @@ body {
   /* background-color: red; */
 }
 
+.menu-mobile-list a {
+  text-decoration: none;
+  color: white;
+  /* background-color: rgba(180, 181, 192, 0.4); */
+}
+
 .menu-mobile-list input {
   padding-left: 15px;
 }
@@ -361,13 +367,7 @@ body {
   background-color: rgba(190, 182, 182, 0.2);
   border: 1px solid rgba(228, 236, 228, 0.233);
   border-radius: 5px;
-  
-}
-
-.menu-mobile-list-item a {
-  text-decoration: none;
   color: white;
-  /* background-color: rgba(180, 181, 192, 0.4); */
   
 }
 
@@ -593,10 +593,6 @@ body {
   }
   .nav-bars-btn {
     display: block;
-  }
-
-  .nav-mobile {
-    /* display: block; */
   }
 }
 
